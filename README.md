@@ -6,11 +6,12 @@ Homebrew formulae for [sflinter](https://github.com/sflinter) projects.
 
 ```sh
 brew tap sflinter/tap
-brew install banktivity-swift-mcp
+brew install cloud-conductor
 ```
 
 ## Formulae
 
 | Formula | Description |
 |---|---|
+| `cloud-conductor` | Lightweight CLI orchestrator for RunPod GPU workloads |
 | `banktivity-swift-mcp` | MCP server and CLI for Banktivity personal finance vaults |
