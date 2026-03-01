@@ -1,8 +1,8 @@
 class CloudConductor < Formula
   desc "Lightweight CLI orchestrator for RunPod GPU workloads"
   homepage "https://github.com/sflinter/cloud-conductor"
-  url "https://github.com/sflinter/cloud-conductor/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "3ae9ff9317ad8c81402255531389d38d9a4715260d931350d16bedbe4d271d7e"
+  url "https://github.com/sflinter/cloud-conductor/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "bb1acef46fdd0f3251e04bd5608a05bf33655534d3fb975f1fcc9be046856725"
   license "MIT"
 
   depends_on "python@3.12"
