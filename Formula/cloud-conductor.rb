@@ -6,13 +6,13 @@ class CloudConductor < Formula
   license "MIT"
 
   depends_on "python@3.12"
-  depends_on "uv"
 
   def install
-    system "uv", "venv", "--python", "python3.12", libexec/"venv"
-    system libexec/"venv/bin/pip", "install", "."
-    (bin/"conductor").write_env_script libexec/"venv/bin/conductor",
-      PATH: "#{Formula["uv"].opt_bin}:${PATH}"
+    python3 = Formula["python@3.12"].opt_bin/"python3.12"
+    system python3, "-m", "venv", libexec/"venv"
+    system libexec/"venv/bin/pip", "install", "--no-deps", buildpath
+    system libexec/"venv/bin/pip", "install", buildpath
+    (bin/"conductor").write_env_script libexec/"venv/bin/conductor"
   end
 
   test do
