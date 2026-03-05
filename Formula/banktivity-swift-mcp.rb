@@ -2,7 +2,7 @@ class BanktivitySwiftMcp < Formula
   desc "MCP server and CLI for Banktivity personal finance vaults"
   homepage "https://github.com/sflinter/banktivity-swift-mcp"
   url "https://github.com/sflinter/banktivity-swift-mcp/releases/download/v0.8.0/banktivity-swift-mcp-v0.8.0-macos-universal.tar.gz"
-  sha256 "a4028a7967d075860715ed77567bc5bfbcf1a2202048674c4e8f976cb8a78caf"
+  sha256 "f384b55bd11ca516c0e7e270ae68be65f5f576207538e1d338ef1566144fe651"
   version "0.8.0"
   license "MIT"
 
