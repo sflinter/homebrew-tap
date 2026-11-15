@@ -1,9 +1,9 @@
 class BanktivitySwiftMcp < Formula
   desc "MCP server and CLI for Banktivity personal finance vaults"
   homepage "https://github.com/sflinter/banktivity-swift-mcp"
-  url "https://github.com/sflinter/banktivity-swift-mcp/releases/download/v0.17.0/banktivity-swift-mcp-v0.17.0-macos-universal.tar.gz"
-  sha256 "9614278919013fb9dc40f991ea43ad71d3fa21883c4ba3183ed286bd3f4a5bf2"
-  version "0.17.0"
+  url "https://github.com/sflinter/banktivity-swift-mcp/releases/download/v0.18.0/banktivity-swift-mcp-v0.18.0-macos-universal.tar.gz"
+  sha256 "ef8642113b461ac12365c1c059d17f6d70ceda9e5df3aff960e993b2ea3296c3"
+  version "0.18.0"
   license "MIT"
 
   depends_on :macos
@@ -14,6 +14,6 @@ class BanktivitySwiftMcp < Formula
   end
 
   test do
-    assert_match "0.17.0", shell_output("#{bin}/banktivity-cli --version")
+    assert_match "0.18.0", shell_output("#{bin}/banktivity-cli --version")
   end
 end
